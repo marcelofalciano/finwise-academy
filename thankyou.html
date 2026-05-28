@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're on the list — FinWise Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',system-ui,sans-serif;background:#FAFAF8;color:#1A1A1A;min-height:100vh;display:flex;flex-direction:column}
+a{text-decoration:none;color:inherit}
+
+nav{padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #E8EAE6;background:#fff}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:20px;color:#084D3C;letter-spacing:-.3px}
+.nav-logo span{color:#1D9E75}
+
+.main{flex:1;display:flex;align-items:center;justify-content:center;padding:60px 24px;text-align:center}
+.card{max-width:520px;width:100%}
+
+.check-circle{width:72px;height:72px;border-radius:50%;background:#E8F5F0;display:flex;align-items:center;justify-content:center;margin:0 auto 32px;font-size:32px}
+
+h1{font-family:'DM Serif Display',serif;font-size:clamp(32px,5vw,48px);line-height:1.15;color:#0D1B2A;margin-bottom:16px;letter-spacing:-.3px}
+h1 em{color:#1D9E75;font-style:italic}
+
+.subtitle{font-size:17px;color:#5A6472;line-height:1.65;margin-bottom:36px;max-width:420px;margin-left:auto;margin-right:auto}
+
+.divider{height:1px;background:#E8EAE6;margin:36px 0}
+
+.what-next{text-align:left;background:#fff;border:1px solid #E8EAE6;border-radius:16px;padding:28px 32px;margin-bottom:32px}
+.what-next h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:#1D9E75;margin-bottom:20px}
+.next-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+.next-item:last-child{margin-bottom:0}
+.next-dot{width:28px;height:28px;border-radius:50%;background:#E8F5F0;color:#1D9E75;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.next-title{font-size:14px;font-weight:600;color:#0D1B2A;margin-bottom:3px}
+.next-desc{font-size:13px;color:#5A6472;line-height:1.5}
+
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:#1D9E75;transition:gap .2s}
+.back-link:hover{gap:10px}
+
+footer{padding:24px 40px;border-top:1px solid #E8EAE6;background:#0D1B2A;color:rgba(255,255,255,.4);font-size:12px;text-align:center}
+footer a{color:rgba(255,255,255,.4)}
+
+@media(max-width:600px){
+  nav{padding:0 20px}
+  .main{padding:40px 20px}
+  .what-next{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">FinWise <span>Academy</span></a>
+  <a href="/" style="font-size:14px;color:#5A6472">← Back to site</a>
+</nav>
+
+<div class="main">
+  <div class="card">
+
+    <div class="check-circle">✓</div>
+
+    <h1>You're on the list.<br><em>We'll be in touch.</em></h1>
+
+    <p class="subtitle">Thank you for your interest in FinWise Academy. We're preparing for enrollment and will reach out as soon as access opens.</p>
+
+    <div class="what-next">
+      <h3>What happens next</h3>
+      <div class="next-item">
+        <div class="next-dot">1</div>
+        <div>
+          <div class="next-title">You'll hear from us first</div>
+          <div class="next-desc">Waitlist members get early access before we open enrollment to the public.</div>
+        </div>
+      </div>
+      <div class="next-item">
+        <div class="next-dot">2</div>
+        <div>
+          <div class="next-title">No commitment required</div>
+          <div class="next-desc">Being on the waitlist doesn't obligate you to anything. You can explore the platform and decide when you're ready.</div>
+        </div>
+      </div>
+      <div class="next-item">
+        <div class="next-dot">3</div>
+        <div>
+          <div class="next-title">We'll keep it brief</div>
+          <div class="next-desc">We'll only reach out when enrollment is ready. No newsletters, no spam.</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="/" class="back-link">← Explore FinWise Academy →</a>
+
+  </div>
+</div>
+
+<footer>
+  © 2025 FinWise Academy. All rights reserved. &nbsp;·&nbsp;
+  FinWise Academy provides educational content and decision-support tools. It does not provide individualized legal, tax, investment, credit repair, or regulated financial advisory services.
+</footer>
+
+</body>
+</html>
