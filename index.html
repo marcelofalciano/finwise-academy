@@ -191,14 +191,59 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
 .divider{height:1px;background:var(--border);max-width:1200px;margin:0 auto}
 
 @media(max-width:768px){
-  .hero{flex-direction:column;padding:100px 24px 60px;gap:48px}
+  /* Nav */
+  nav{padding:0 20px;height:56px}
+  .nav-links a:not(.nav-cta){display:none}
+  .nav-cta{padding:7px 16px;font-size:13px}
+
+  /* Hero */
+  .hero{flex-direction:column;padding:90px 20px 60px;gap:36px}
   .hero-visual{display:none}
-  .stats-grid,.steps,.modules-grid,.pricing-grid,.testimonials-grid{grid-template-columns:1fr}
-  .about-grid{grid-template-columns:1fr;gap:40px}
-  .cta-form{flex-direction:column}
-  nav{padding:0 24px}
-  .nav-links{gap:16px}
-  .section{padding:60px 24px}
+  h1{font-size:32px}
+  .hero-sub{font-size:16px}
+  .hero-stats{gap:20px}
+  .stat-num{font-size:26px}
+
+  /* Sections */
+  .section{padding:56px 20px}
+  .full-width .section{padding:56px 20px 0}
+  .full-width > div > div{grid-template-columns:1fr !important;gap:32px}
+
+  /* Grids */
+  .stats-grid{grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
+  .steps{grid-template-columns:1fr;gap:20px}
+  .step-connector{display:none}
+  .modules-grid{grid-template-columns:1fr;gap:14px}
+  .pricing-grid{grid-template-columns:1fr;gap:14px}
+  .testimonials-grid{grid-template-columns:1fr;gap:14px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .partners-row{flex-direction:column;gap:12px}
+  .two-col{grid-template-columns:1fr;gap:14px}
+
+  /* CTA */
+  .cta-form{flex-direction:column;gap:10px}
+  .cta-input{width:100%}
+  .cta-submit{width:100%;padding:14px}
+  .cta-section{padding:60px 20px}
+  .cta-section h2{font-size:28px}
+
+  /* Footer */
+  footer{padding:32px 20px}
+  .footer-bottom{flex-direction:column;gap:6px;text-align:center}
+
+  /* Section titles */
+  .section-title{font-size:28px !important}
+
+  /* Roadmap */
+  .timeline{flex-direction:column;gap:16px}
+  .timeline::before{display:none}
+  .tl-dot{margin:0 0 6px 0}
+}
+@media(max-width:480px){
+  h1{font-size:28px}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat-card-num{font-size:38px}
+  .pricing-grid .price-card.featured .price-featured-badge{font-size:10px;padding:3px 10px}
 }
 </style>
 </head>
