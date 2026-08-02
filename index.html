@@ -173,7 +173,7 @@ h1 em{color:var(--teal);font-style:italic}
 .cta-section p{font-size:18px;color:rgba(255,255,255,.7);margin-bottom:40px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.65}
 .cta-form{display:flex;gap:12px;max-width:420px;margin:0 auto}
 .cta-input{flex:1;padding:14px 18px;border-radius:8px;border:none;font-size:15px;font-family:var(--sans);outline:none}
-.cta-submit{background:var(--gold);color:#fff;padding:14px 24px;border-radius:8px;font-size:15px;font-weight:600;border:none;cursor:pointer;font-family:var(--sans);transition:background .2s;white-space:nowrap}
+.cta-submit{background:var(--gold);color:#fff;padding:14px 24px;border-radius:8px;font-size:15px;font-weight:600;border:none;cursor:pointer;font-family:var(--sans);transition:background .2s;white-space:nowrap;display:flex;align-items:center;justify-content:center;line-height:1}
 .cta-submit:hover{background:#a87820}
 .cta-note{font-size:12px;color:rgba(255,255,255,.4);margin-top:14px}
 
@@ -437,7 +437,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
     </div>
     <div class="module-item">
       <div class="module-icon" style="background:#EEF2FF">🎯</div>
-      <h3>Debt Education Strategies</h3>
+      <h3>Debt Avoidance Strategies</h3>
       <p>Practical frameworks for evaluating debt decisions, comparing repayment scenarios, and understanding high-interest borrowing cycles.</p>
       <span class="module-status status-live">Validated with users</span>
     </div>
@@ -572,36 +572,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
 </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- PARTNERS -->
-<section style="background:var(--bg)">
-<div class="section">
-  <div class="section-tag">Institutional partners</div>
-  <h2 class="section-title">Bringing financial education<br>to communities that need it</h2>
-  <p class="section-sub">FinWise Academy is developing post-launch institutional pathways with organizations serving immigrants, students, and financially underserved communities across the United States.</p>
-  <div class="partners-row" style="justify-content:center;text-align:center">
-    <div class="partner-card" style="text-align:center">
-      <div class="partner-name">Champion Christian College</div>
-      <div class="partner-desc">Serving approximately 1,500 immigrant students in its Church Ministries program in Hot Springs, Arkansas, many adapting to financial life in the United States.</div>
-      <div class="partner-tag">Education · Hot Springs, AR</div>
-    </div>
-    <div class="partner-card" style="text-align:center">
-      <div class="partner-name">Family Church</div>
-      <div class="partner-desc">Pastoral community serving immigrant families in Orlando, Florida. Exploring FinWise Academy as a practical financial education resource for families building their lives in the U.S.</div>
-      <div class="partner-tag">Community · Montverde, FL</div>
-    </div>
-    <div class="partner-card" style="text-align:center">
-      <div class="partner-name">BrazilPays</div>
-      <div class="partner-desc">Payment and financial services company serving Brazilian and Latin American clients across Florida and other U.S. states. Signed MOU to explore a post-launch educational partnership for its client and community network.</div>
-      <div class="partner-tag">Financial Services · Florida</div>
-    </div>
-  </div>
-</div>
-</section>
-
-<div class="divider"></div>
-
 <!-- ABOUT -->
 <section id="about" style="background:#fff">
 <div class="section">
@@ -628,8 +598,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
         <div class="credential">
           <div class="credential-icon">🏢</div>
           <div>
-            <h4>Director & Partner, Geekie (2013–2022)</h4>
-            <p>Led a 12-person team growing Geekie from 54 to 214 schools and $1.5M to $21M in revenue. Youngest Partner in company history.</p>
+            <h4>Director & Senior Sales Leader, Geekie (2013–2022)</h4>
+            <p>Led a 12-person team growing Geekie from 54 to 214 schools and $1.5M to $21M in revenue. Youngest executive appointed to the company’s statutory board.</p>
           </div>
         </div>
         <div class="credential">
@@ -642,7 +612,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
         <div class="credential">
           <div class="credential-icon">🏫</div>
           <div>
-            <h4>Financial educator, BrasilPrev (2011–2013)</h4>
+            <h4>Financial educator, Brasilprev (2011–2013)</h4>
             <p>Delivered 40 financial education sessions to 5,000 students on behalf of Brazil's largest private pension company. Received two formal employment offers.</p>
           </div>
         </div>
@@ -657,10 +627,14 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
   <div class="section-tag" style="color:rgba(255,255,255,.5)">Get started</div>
   <h2>Join the waitlist</h2>
   <p>Be among the first to access FinWise Academy when we open enrollment. No credit card required.</p>
-  <div class="cta-form">
-    <input class="cta-input" type="email" placeholder="your@email.com">
-    <a href="thankyou.html" class="cta-submit" style="text-decoration:none;display:flex;align-items:center;justify-content:center">Join waitlist</a>
-  </div>
+  <form class="cta-form" method="POST" target="fw_sink"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeMzO4nb3GNknOvVBsqfq2KrHqYobH412F5oJLMhs3C9Tffgw/formResponse"
+        onsubmit="setTimeout(function(){location.href='thankyou.html'},700)">
+    <input class="cta-input" type="email" name="entry.725740091"
+           placeholder="your@email.com" required autocomplete="email">
+    <button type="submit" class="cta-submit">Join waitlist</button>
+  </form>
+  <iframe name="fw_sink" style="display:none" title="hidden"></iframe>
   <div class="cta-note">We'll notify you when enrollment opens.</div>
 </section>
 
