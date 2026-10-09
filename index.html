@@ -130,6 +130,7 @@ h1 em{color:var(--teal);font-style:italic}
 .price-tier{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--teal);margin-bottom:8px}
 .price-amount{font-family:var(--serif);font-size:36px;color:var(--navy);line-height:1;margin-bottom:4px}
 .price-period{font-size:13px;color:var(--muted)}
+.price-sub{font-size:12px;color:var(--muted);opacity:.85;margin-top:3px;line-height:1.45}
 .price-desc{font-size:13px;color:var(--muted);margin:14px 0;line-height:1.5}
 .price-divider{height:1px;background:var(--border);margin:16px 0}
 .price-feature{display:flex;gap:8px;font-size:13px;color:var(--text);margin-bottom:8px;align-items:flex-start}
@@ -501,7 +502,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
 <div class="section">
   <div class="section-tag">Pricing</div>
   <h2 class="section-title">Priced so cost is not<br>the barrier</h2>
-  <p class="section-sub">These are our plans for launch. Join the waitlist to get first access when enrollment opens. No credit card required.</p>
+  <p class="section-sub">These are our plans for launch. Paid plans are annual and paid in full at the start of each term. Join the waitlist to get first access when enrollment opens. No credit card required.</p>
   <div class="pricing-grid">
     <div class="price-card">
       <div class="price-tier">Free</div>
@@ -519,7 +520,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
       <div class="price-featured-badge">Best value</div>
       <div class="price-tier">Standard</div>
       <div class="price-amount">$99</div>
-      <div class="price-period">per year · $8.25/month</div>
+      <div class="price-period">per year, paid annually at <span style="white-space:nowrap">sign-up</span></div>
+      <div class="price-sub">Equivalent to $8.25/month</div>
       <div class="price-desc">Full access to structured financial education and practical tools.</div>
       <div class="price-divider"></div>
       <div class="price-feature">Full learning track access</div>
@@ -532,7 +534,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
     <div class="price-card">
       <div class="price-tier">Premium</div>
       <div class="price-amount">$199</div>
-      <div class="price-period">per year · $16.58/month</div>
+      <div class="price-period">per year, paid annually at <span style="white-space:nowrap">sign-up</span></div>
+      <div class="price-sub">Equivalent to $16.58/month</div>
       <div class="price-desc">Enhanced educational support for people who want to go further.</div>
       <div class="price-divider"></div>
       <div class="price-feature">Everything in Standard</div>
@@ -545,14 +548,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
     </div>
     <div class="price-card">
       <div class="price-tier">Institutional</div>
-      <div class="price-amount" style="font-size:28px">$5–7</div>
-      <div class="price-period">per user/month · volume pricing</div>
+      <div class="price-amount" style="font-size:26px">$60–$84</div>
+      <div class="price-period">per licensed seat per year · volume pricing</div>
+      <div class="price-sub">Paid in full before activation of each 12-month term.</div>
       <div class="price-desc">For nonprofits, colleges, credit unions, and employers serving groups.</div>
       <div class="price-divider"></div>
       <div class="price-feature">All Premium features</div>
       <div class="price-feature">Partner reporting dashboard</div>
       <div class="price-feature">Group onboarding support</div>
       <div class="price-feature">Custom branding options</div>
+      <div class="price-feature">Train-the-trainer workshops</div>
             <a href="mailto:marcelo.falciano@finwise.academy" class="price-btn price-btn-outline">Contact us</a>
     </div>
   </div>
@@ -645,7 +650,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);padding:48px 40px}
       <li>Free seats are added on top of paid ones. They never replace or discount a paid license.</li>
       <li>Partner organizations receive access codes for the people they serve, at no cost, and receive aggregate participation and engagement results.</li>
       <li>In each of our first two years after launch, we will make at least 1,000 free seats available through our partner organizations, regardless of sales.</li>
-      <li>Every year we will publish on this page the number of free seats provided, the partner organizations served, and aggregate results, reporting outcomes only after they happen. We have committed not to reduce this policy before the fifth anniversary of our launch.</li>
+      <li>Within 90 days after the end of each year of commercial operations, we will publish on this page the number of paid licenses, free seats provided, and partner organizations served, with aggregate participation and self-reported outcome results where available. We report outcomes only after they happen. We have committed not to reduce this policy before the fifth anniversary of our launch.</li>
     </ul>
     <div class="opof-cta"><a class="opof-btn" href="#signup">Partner with us</a><a class="opof-link" href="#how">See how the program works</a></div>
     <p class="opof-foot">This is how we grow: every paying customer extends the program to someone who might not otherwise have access to it.</p>
